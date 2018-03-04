@@ -5,6 +5,11 @@ document.getElementById('todos').onkeypress = function (e) {
 
 }
 
+document.getElementById('done-button').onclick = function (e) {
+
+    Module.markalldone()
+
+}
 
 var Module = (function () {
 
@@ -29,6 +34,13 @@ var Module = (function () {
             });
            publicMethod()
         }
+    }
+
+    function markalldone(){
+        var obj = array1.find((obj, i) => {
+            array1[i].checked = true;
+        });
+       publicMethod()
     }
 
     function removeItem(e){
@@ -106,6 +118,7 @@ var Module = (function () {
         
         publicMethod()
     }
+    
 
     function updateItemsLeft(){
 
@@ -125,7 +138,8 @@ var Module = (function () {
     return {
         getItems: publicMethod,
         addItem: addItemMethod,
-        updateItemsLeft: updateItemsLeft
+        updateItemsLeft: updateItemsLeft,
+        markalldone: markalldone
     }
 })();
 
