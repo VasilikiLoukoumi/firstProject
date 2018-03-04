@@ -1,2 +1,0 @@
-# firstProject
-codeHub first project
