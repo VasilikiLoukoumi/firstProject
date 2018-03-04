@@ -52,10 +52,30 @@ var Module = (function () {
 
 
     }
+
+    function updateItemsLeft(){
+
+        var cnt = 0;
+        for(var i = 0; i < _privateMethod().items.length; ++i)
+        {
+            if(!_privateMethod().items[i].checked) 
+            {
+                cnt++;
+            }
+        }
+
+        document.getElementById('items-left').innerHTML = cnt;
+
+    }
+
+
     return {
         getItems: publicMethod,
+        updateItemsLeft: updateItemsLeft,
     }
 })();
 
 Module.getItems()
+Module.updateItemsLeft()
+
 
