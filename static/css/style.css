@@ -4,9 +4,9 @@
 .header1 {
 
     background: white;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
-
-
 
 .title {
 
@@ -14,3 +14,10 @@
     font-size: 35px;
 }
 
+.mylist {
+    list-style-type: none;
+}
+
+.mylistgroup {
+    padding-left: 0px;
+}
