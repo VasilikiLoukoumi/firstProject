@@ -1,3 +1,6 @@
+
+
+
 .header1 {
 
     background: white;
@@ -19,16 +22,29 @@
     padding-left: 0px;
 }
 
-.done-list-item {
-    display:inline-flex;
-    padding:10px;
+.float_right {
+    float: right;
+
 }
 
-.done{
-    margin-right: 20em;
+.mylist_deleted {
+    list-style-type: none;
+    height: 45px;
+    border-top: 1px solid grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 36px;
 }
 
-.borderless{
-	border-bottom:1px solid silver;
+.mylist_deleted:first-child {
+    border-top: none;
+}
 
+.mylist_deleted.top {
+    border-top: none;
+}
+
+#items-left {
+    float: left;
+    margin-left: 15px;
 }
