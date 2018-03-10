@@ -114,6 +114,7 @@ var Module = (function () {
                 checked: false
             }
             array1.push(itemadd);
+			localStorage.setItem('notes', JSON.stringify(array1));
         }
         
         publicMethod()
