@@ -219,6 +219,7 @@ var Module = (function () {
 
     function addItemMethod() {
         var item_new = document.getElementById('todos').value;
+
         if (item_new != '') {
             var params = new URLSearchParams();
             params.append('title', item_new);
@@ -232,6 +233,7 @@ var Module = (function () {
                 .catch(function (error) {
                     console.log(error);
                 });
+
         }
     }
 
